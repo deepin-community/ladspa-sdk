@@ -1,0 +1,3 @@
+Don-t-remove-symbol-table-and-relocation-information-from.patch
+Allow-passing-FLAGS-to-make.patch
+0001-uniontech-add-CFLAGS-fPIE.patch

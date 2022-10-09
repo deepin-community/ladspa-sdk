@@ -1,0 +1,12 @@
+Index: ladspa-sdk/src/Makefile
+===================================================================
+--- ladspa-sdk.orig/src/Makefile
++++ ladspa-sdk/src/Makefile
+@@ -17,6 +17,7 @@ INCLUDES	=	-I.
+ LIBRARIES	=	-ldl -lm -lsndfile
+ MANDATORY	=	$(INCLUDES) -fPIC -DDEFAULT_LADSPA_PATH=$(INSTALL_PLUGINS_DIR)
+ CFLAGS		?=	-Wall -Werror -O2
++CFLAGS		+=	-fPIE
+ BINFLAGS	=	-fPIE -pie
+ CXXFLAGS	=	$(CFLAGS)
+ PLUGINS		=	../plugins/amp.so				\
